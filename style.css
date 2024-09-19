@@ -1,0 +1,97 @@
+header {
+  color: #fefae0;
+  text-align: center;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+body {
+  background: #264653;
+  color: #723D46;
+  font-size: 18px;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+section {
+  background: #faf7e7;
+  border-radius: 10px;
+  padding: 15px;
+  width: 500px; 
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.424);
+}
+
+div {
+  text-align: center;
+  padding: 10px;
+}
+
+input[type="button"] {
+  background-color: #E26D5C; 
+  color: #fff; 
+  border: none; 
+  border-radius: 10px; 
+  padding: 5px 15px; 
+  font-size: 15px; 
+  font-family: "Chakra Petch", sans-serif;
+  cursor: pointer; 
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+  background-color: #264653; 
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.424);
+}
+
+footer {
+  color: #fefae0;
+  text-align: center;
+  font-style: italic;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsividade para telas menores que 768px (tamanho de celular) */
+@media (max-width: 768px) {
+  section {
+    width: 90%; /* Ocupar 90% da tela no celular */
+    padding: 10px; /* Ajustar o padding para ficar mais confortável */
+  }
+
+  body {
+    font-size: 16px; /* Diminuir um pouco o tamanho da fonte */
+  }
+
+  img {
+    width: 150px; /* Diminuir o tamanho da imagem no celular */
+    height: 150px;
+  }
+}
+
+/* Responsividade para telas menores que 480px (tamanho de celulares muito pequenos) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 24px; /* Reduzir o tamanho do título */
+  }
+
+  body {
+    font-size: 14px; /* Diminuir ainda mais o tamanho da fonte */
+  }
+
+  img {
+    width: 120px; /* Reduzir ainda mais o tamanho da imagem */
+    height: 120px;
+  }
+
+  section {
+    width: 80%; /* Ocupar toda a largura disponível */
+    padding: 5px;
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
+    </style>
+</head>
+
+<body onload="verificar()">
+    <header>
+        <h1>verificador de idade 👩🏻‍🦲</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Nome:
+                <input type="text" name="txtnome" id="txtnome" placeholder="Bruna">
+            </p>
+            <p>Ano de nascimento:
+                <input type="number" name="txtano" id="txtano" placeholder="1992">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="mas">
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem" checked>
+                <label for="fem">Feminino</label>
+            </p>
+            <input type="button" value="verificar" onclick="verificar()">
+
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Bruna Neves - 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
